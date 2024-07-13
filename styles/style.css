@@ -1,0 +1,16 @@
+:root {
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    height: 10vh;
+    background-position: center;
+    background-size: contain;
+    background-image: url("https://llerosadreams.es/wp-content/uploads/2020/04/lenguajes-programacion.png"), ;
+    background-color: transparent;
+}
