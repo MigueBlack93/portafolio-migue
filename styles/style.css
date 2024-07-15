@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 :root {
 
+
+    --fuente-titulos: "Titillium Web", sans-serif;
+    --fuente-textos: "Exo 2", sans-serif;
 }
 
 body {
@@ -8,9 +13,95 @@ body {
 }
 
 .header{
-    height: 10vh;
-    background-position: center;
-    background-size: contain;
-    background-image: url("https://llerosadreams.es/wp-content/uploads/2020/04/lenguajes-programacion.png"), ;
-    background-color: transparent;
+    height: 20vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/programacion.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 3% 0% 3%;
+    gap: 30px;
+}
+
+.header__titulo{
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.header__menu{
+    display: flex;
+    gap: 30px;
+}
+
+.header__indice{
+    font-family: var(--fuente-titulos);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.main{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main__textos{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.main__titulo{
+    font-family: var(--fuente-titulos);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main__texto{
+    font-family: var(--fuente-textos);
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.main__redes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.main__redes__titulo{
+    font-family: var(--fuente-textos);
+    font-size: 1.5rem;
+}
+
+.main__redes__boton{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.main__imagen{
+    width: 20vw;
+    height: 20vw;
+}
+
+.footer{
+    width: 100vw;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer__texto{
+    font-family: var(--fuente-textos);
+    font-size: 1rem;
 }
