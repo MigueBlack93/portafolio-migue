@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 :root {
-
+    --color-header-titulo: #000000;
+    --color-fondo-main: #92DCE5;
+    --color-header-menu: #EEE5E9;
+    --color-footer-texto: #7C7C7C;
+    --color-resaltar-texto: #D64933;
 
     --fuente-titulos: "Titillium Web", sans-serif;
     --fuente-textos: "Exo 2", sans-serif;
 }
 
 body {
-    width: 100vw;
     height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../images/programacion.jpg);
 }
 
 .header{
     height: 20vh;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/programacion.jpg);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +33,7 @@ body {
     font-family: var(--fuente-titulos);
     font-weight: 700;
     font-size: 3rem;
+    color: var(--color-header-titulo);
 }
 
 .header__menu{
@@ -40,13 +45,16 @@ body {
     font-family: var(--fuente-titulos);
     text-decoration: none;
     font-size: 2rem;
+    color: var(--color-fondo-main);
+    text-shadow: var(--color-resaltar-texto) -3px 3px;
 }
 
 .main{
-    min-height: 70vh;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--color-header-menu);
 }
 
 .main__textos{
@@ -89,16 +97,16 @@ body {
 }
 
 .main__imagen{
-    width: 20vw;
-    height: 20vw;
+    width: 21vw;
+    height: 21vw;
 }
 
 .footer{
     width: 100vw;
-    min-height: 30vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .footer__texto{
