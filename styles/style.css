@@ -50,7 +50,8 @@ body {
 }
 
 .main{
-    height: 70%;
+    min-height: 70vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -73,6 +74,7 @@ body {
     font-family: var(--fuente-textos);
     font-size: 1.25rem;
     text-align: justify;
+    line-height: 150%;
 }
 
 .main__redes{
@@ -80,6 +82,7 @@ body {
     flex-direction: column;
     align-content: center;
     text-align: center;
+    margin: 0px 0px 12px 0px;
 }
 
 .main__redes__titulo{
@@ -87,13 +90,31 @@ body {
     font-size: 1.5rem;
 }
 
+.main__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
 .main__redes__boton{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     font-family: var(--fuente-titulos);
     font-size: 1.5rem;
     text-decoration: none;
+    color: var(--color-resaltar-texto);
+    background-color: var(--color-header-titulo);
+    border-color: var(--color-resaltar-texto);
+    border: solid 2px;
+    height: 56px;
+    width: 340px;
+    border-radius: 18px;
+    gap: 8px;
+}
+
+.main__redes_icono{
+    width: 32px;
 }
 
 .main__imagen{
@@ -111,5 +132,8 @@ body {
 
 .footer__texto{
     font-family: var(--fuente-textos);
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-fondo-main);
+    text-shadow: var(--color-resaltar-texto) -2px 2px;
 }
