@@ -137,3 +137,7 @@ body {
     color: var(--color-fondo-main);
     text-shadow: var(--color-resaltar-texto) -2px 2px;
 }
+
+@media (max-width: 1100px) {
+    
+}
