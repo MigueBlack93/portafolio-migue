@@ -7,6 +7,11 @@
         <title>Portafolio Miguel Ulmi</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" type="image/x-icon" href="AGREGAR LA RUTA">
+        <meta name="description" content="Este es el portafolio de Miguel Ulmi, un programador junior especializado en back end, pero, también, con conocimientos sólidos en front end">
+        <meta name="keywords" content="Desarrollador, Web, html, javascript, js, css, java, backend, frontend, programador">
+        <meta name="author" content="Miguel Ulmi">
+        <meta name="OG">
     </head>
 
     <body>
@@ -24,7 +29,35 @@
             <p class="main__textos">Dejame tus datos para contactarte</p>
 
             <form class="main__formulario">
-                <li></li>
+                <label for="Nombre">Nombre y Apellido
+                    <input type="text" name="nombre" id="nombre" placeholder="John Doe">
+                </label>
+                <label for="email">Ingrese su email
+                    <input type="email" name="email" id="mail" placeholder="ejemplo@gmail.com">
+                </label>
+                <label for="telefono">Ingrese su teléfono
+                    <input type="text" name="telefono" id="telefono" placeholder="+33 (032) 123456789">
+                </label>
+                <label for="horario contacto">Elija un horario de contacto
+                    <select name="horario-contacto" id="horario-contacto">
+                        <option value="manana">08:00 a 12:00 hs</option>
+                        <option value="tarde">13:00 a 18:00 hs</option>
+                        <option value="noche">19:00 a 22:00 hs</option>
+                    </select>
+                </label>
+                <label for="recomendado">Por donde me conociste
+                    <input list="recomendado" name="recomendado">
+                    <datalist id="recomendado">
+                        <option value="Linkedin"></option>
+                        <option value="Computrabajo"></option>
+                        <option value="CV en Empresa"></option>
+                        <option value="Redes Sociales"></option>
+                        <option value="Otros"></option>
+                    </datalist>
+                </label>
+                <label for="condiciones">Al enviar el formulario aceptas nuestros <a href="">términos y condiciones</a>
+                    <input type="checkbox" id="condiciones" required>
+                </label>
             </form>
         </main>
 
